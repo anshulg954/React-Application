@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import { App, SignIn } from './components';
+import { App, SignIn, SideBar, MainContainer } from './components';
 import { BrowserRouter } from 'react-router-dom';
 
 //import SignIn from './components/SignIn'

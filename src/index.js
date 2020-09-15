@@ -3,12 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import { App, SignIn, SideBar, MainContainer } from './components';
 import { BrowserRouter } from 'react-router-dom';
-
+import  UserProvider  from './providers/UserProvider';
 //import SignIn from './components/SignIn'
 ReactDOM.render(
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>,
+  <UserProvider>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </UserProvider>,
   document.getElementById('root')
 );
 
